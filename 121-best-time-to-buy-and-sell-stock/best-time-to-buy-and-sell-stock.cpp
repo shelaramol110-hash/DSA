@@ -7,8 +7,8 @@ public:
 
             if(prices[i] < minprice) minprice = prices[i];
             
-                int cprofit=0;
-                cprofit = prices[i] - minprice;
+                int cprofit=prices[i] - minprice;
+                
                 profit = max(cprofit,profit);
 
             
