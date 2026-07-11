@@ -6,11 +6,9 @@ public:
         for(int i =0 ;i < prices.size();i++){
 
             if(prices[i] < minprice) minprice = prices[i];
-            
-                int cprofit=prices[i] - minprice;
                 
-                profit = max(cprofit,profit);
-
+                profit = max(prices[i] - minprice,profit);
+                
             
         }
         return profit;
